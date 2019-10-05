@@ -1,0 +1,355 @@
+#Hellenic Temple holdings and Roman cultural buildings
+
+#Temple
+
+temple = {
+
+	# Hellenic Dedicated temples
+	tp_shrine_zeus = {
+		desc = tp_shrine_zeus_desc
+		potential = { 
+			FROMFROM = { has_title_flag = flag_dedicated_to_zeus }
+			FROM = {  
+				OR = {  
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			} 
+		}
+		gold_cost = 500
+		build_time = 50
+		
+		ai_creation_factor = 92
+		add_number_to_name = no
+		liege_prestige = 0.15
+	}
+	tp_shrine_poseidon = {
+		desc = tp_shrine_poseidon_desc
+		potential = { 
+			FROMFROM = { has_title_flag = flag_dedicated_to_poseidon }
+			FROM = {  
+				OR = {  
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			} 
+		}
+		gold_cost = 500
+		build_time = 50
+		
+		ai_creation_factor = 92
+		add_number_to_name = no
+		local_build_time_modifier = -0.1
+		local_build_cost_modifier = -0.1
+	}
+	tp_shrine_hades = {
+		desc = tp_shrine_hades_desc
+		potential = { 
+			FROMFROM = { has_title_flag = flag_dedicated_to_hades }
+			FROM = {  
+				OR = {  
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			} 
+		}
+		gold_cost = 500
+		build_time = 50
+		
+		ai_creation_factor = 92
+		add_number_to_name = no
+		tax_income = 3
+	}
+	tp_shrine_hermes = {
+		desc = tp_shrine_hermes_desc
+		potential = { 
+			FROMFROM = { has_title_flag = flag_dedicated_to_hermes }
+			FROM = {  
+				OR = {  
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			} 
+		}
+		gold_cost = 500
+		build_time = 50
+		
+		ai_creation_factor = 92
+		add_number_to_name = no
+		tradevalue = 15
+	}
+	tp_shrine_demeter = {
+		desc = tp_shrine_demeter_desc
+		potential = { 
+			FROMFROM = { has_title_flag = flag_dedicated_to_demeter }
+			FROM = {  
+				OR = {  
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			} 
+		}
+		gold_cost = 500
+		build_time = 50
+		
+		ai_creation_factor = 92
+		add_number_to_name = no
+		economy_techpoints = 0.05
+	}
+	tp_shrine_athena = {
+		desc = tp_shrine_athena_desc
+		potential = { 
+			FROMFROM = { has_title_flag = flag_dedicated_to_athena }
+			FROM = {  
+				OR = {  
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			} 
+		}
+		gold_cost = 500
+		build_time = 50
+		
+		ai_creation_factor = 92
+		add_number_to_name = no
+		military_techpoints = 0.05
+	}
+	tp_shrine_apollo = {
+		desc = tp_shrine_apollo_desc
+		potential = { 
+			FROMFROM = { has_title_flag = flag_dedicated_to_apollo }
+			FROM = {  
+				OR = {  
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			} 
+		}
+		gold_cost = 500
+		build_time = 50
+		
+		ai_creation_factor = 92
+		add_number_to_name = no
+		culture_techpoints = 0.05
+	}
+	tp_shrine_arthemis = {
+		desc = tp_shrine_arthemis_desc
+		potential = { 
+			FROMFROM = { has_title_flag = flag_dedicated_to_arthemis }
+			FROM = {  
+				OR = {  
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			} 
+		}
+		gold_cost = 500
+		build_time = 50
+		
+		ai_creation_factor = 92
+		add_number_to_name = no
+		liege_piety = 0.1
+	}
+	tp_shrine_ares = {
+		desc = tp_shrine_ares_desc
+		potential = { 
+			FROMFROM = { has_title_flag = flag_dedicated_to_ares }
+			FROM = {  
+				OR = {  
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			} 
+		}
+		gold_cost = 500
+		build_time = 50
+		
+		ai_creation_factor = 92
+		add_number_to_name = no
+		levy_reinforce_rate = 0.05
+	}
+	tp_shrine_aphrodite = {
+		desc = tp_shrine_aphrodite_desc
+		potential = { 
+			FROMFROM = { has_title_flag = flag_dedicated_to_aphrodite }
+			FROM = {  
+				OR = {  
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			} 
+		}
+		gold_cost = 500
+		build_time = 50
+		
+		ai_creation_factor = 92
+		add_number_to_name = no
+		local_revolt_risk = -0.1
+	}
+	tp_shrine_ephaestus = {
+		desc = tp_shrine_ephaestus_desc
+		potential = { 
+			FROMFROM = { has_title_flag = flag_dedicated_to_ephaestus }
+			FROM = {  
+				OR = {  
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			} 
+		}
+		gold_cost = 500
+		build_time = 50
+		
+		ai_creation_factor = 92
+		add_number_to_name = no
+		fort_level = 0.4	
+		tech_growth_modifier = 0.15
+	}
+	tp_shrine_hestia = {
+		desc = tp_shrine_hestia_desc
+		potential = { 
+			FROMFROM = { has_title_flag = flag_dedicated_to_hestia }
+			FROM = {  
+				OR = {  
+					religion = hellenic_pagan
+					religion = hellenic_pagan_reformed
+				}
+			} 
+		}
+		gold_cost = 500
+		build_time = 50
+		
+		ai_creation_factor = 92
+		add_number_to_name = no
+		land_morale = 0.05
+	}
+
+}
+
+castle = {
+
+	#Roman Heavy Infantry camps
+	ca_culture_roman_1 = {
+		desc = ca_culture_roman_1_desc
+		potential = {
+			OR = {
+				culture = Roman
+				has_building = ca_culture_roman_1
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture = Roman
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 0 
+			ROOT = {
+				culture = Roman
+			}
+		}
+		prerequisites = { ca_wall_2 }
+		gold_cost = 200
+		build_time = 730
+		pikemen = 30
+		pikemen_defensive = 0.07
+		pikemen_offensive = 0.07
+		ai_creation_factor = 101
+
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_roman_2 = {
+		desc = ca_culture_roman_1_desc
+		potential = {
+			OR = {
+				culture = roman
+				has_building = ca_culture_roman_1
+				has_building = ca_culture_roman_2
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture = Roman
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 1
+			ROOT = {
+				culture = Roman
+			}
+		}
+		upgrades_from = ca_culture_roman_1
+		gold_cost = 300
+		build_time = 1095
+		pikemen = 40
+		pikemen_defensive = 0.07
+		pikemen_offensive = 0.07
+		ai_creation_factor = 100
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_roman_3 = {
+		desc = ca_culture_roman_1_desc
+		potential = {
+			OR = {
+				culture = Roman
+				has_building = ca_culture_roman_1
+				has_building = ca_culture_roman_2
+				has_building = ca_culture_roman_3
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture = Roman
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 2
+			ROOT = {
+				culture = Roman
+			}
+		}
+		upgrades_from = ca_culture_roman_2
+		gold_cost = 400
+		build_time = 2190
+		pikemen = 50
+		pikemen_defensive = 0.07
+		pikemen_offensive = 0.07
+		ai_creation_factor = 99
+		
+		extra_tech_building_start = 0.8
+	}
+	ca_culture_roman_4 = {
+		desc = ca_culture_roman_1_desc
+		potential = {
+			OR = {
+				culture = Roman
+				has_building = ca_culture_roman_1
+				has_building = ca_culture_roman_2
+				has_building = ca_culture_roman_3
+				has_building = ca_culture_roman_4
+			}
+		}
+		is_active_trigger = {
+			ROOT = {
+				culture = Roman
+			}
+		}
+		trigger = { 
+			TECH_CASTLE_CONSTRUCTION = 4
+			ROOT = {
+				culture = Roman
+			}
+		}
+		upgrades_from = ca_culture_roman_3
+		gold_cost = 500
+		build_time = 2190
+		pikemen = 60
+		pikemen_defensive = 0.07
+		pikemen_offensive = 0.07
+		ai_creation_factor = 98
+		
+		extra_tech_building_start = 0.8
+	}
+
+}

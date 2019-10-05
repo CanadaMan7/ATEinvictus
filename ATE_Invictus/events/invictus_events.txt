@@ -1,0 +1,38 @@
+namespace = invictus_events
+
+#If you choose the Invictus trait, the following events can spawn or result from decisions
+
+#Invictus Start Decision Event
+character_event = {
+	id = invictus_events.1
+	desc = EVTDESCinvictus_events1
+	picture = GFX_evt_hellenic_temple
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	option = { #Get some in the help of gold and piety as well as ensuring Culture and Religion for county
+		name = EVTOPTAinvictus_events1
+		custom_tooltip = { text = EVTOPTAinvictus_events1_TT }
+		ROOT = { 
+			wealth = 2500
+			piety = 100
+		}
+		hidden_tooltip = { 
+			set_global_flag = invictus_startup_used
+			capital_scope = {
+				province_event = { id = 55001 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTBinvictus_events1
+		custom_tooltip = { text = EVTOPTBinvictus_events1_TT }
+		hidden_tooltip = { 
+			set_global_flag = invictus_startup_declined
+		}
+	}
+	option = {
+		name = EVTOPTCinvictus_events1
+		custom_tooltip = { text = EVTOPTCinvictus_events1_TT }
+	}
+}

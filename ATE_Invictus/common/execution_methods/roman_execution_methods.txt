@@ -1,0 +1,71 @@
+####################
+#ROMAN EXECUTION:
+####################
+#Did you think Id leave you hanging?
+#
+
+####################
+
+
+execution_method = {
+	death = death_execution_roman_crucifixion
+	weight_multiplier = {
+		factor = 2000
+	}
+	trigger = {
+		FROM = {
+			culture = Roman
+			NOR = { 
+				#sorry no christians or vaguely christians allowed
+				religion_group = christian
+				religion_group = cult_of_saints
+				religion_group = latter_day_saints
+				religion = revelationist
+				religion = revelationist_reformed
+			}
+		}
+	}
+
+}
+
+execution_method = {
+	death = death_execution_hanging
+	weight_multiplier = {
+		factor = 200
+		modifier = {
+			factor = 2
+			FROM = {
+				trait = kind
+			}
+		}
+		modifier = {
+			factor = 2
+			FROM = {
+				trait = temperate
+			}
+		}
+		modifier = {
+			factor = 2
+			FROM = {
+				trait = charitable
+			}
+		}
+		modifier = {
+			factor = 4
+			is_lowborn = yes
+		}
+	}
+	trigger = {
+		FROM = {
+			NOT = { is_nomadic = yes }
+			NOT = {
+				religion = hellenic_pagan
+				religion = hellenic_pagan_reformed
+			}
+		}
+	}
+}
+
+
+
+

@@ -1,0 +1,35 @@
+### Hellenic and Roman items ###
+slots = {
+	weapon = 1
+	ceremonial_weapon = 1
+	scepter = 1
+	crown = 1
+	wrist = 1
+	neck = 1
+	torso = 1
+	ceremonial_torso = 1
+	mask = 1
+	library = 4
+}
+
+scepter_hellenic_fylkir = { 
+	monthly_character_prestige = 0.4
+	monthly_character_piety = 0.7
+	diplomacy = 2
+	learning = 2
+	tribal_opinion = 10
+	quality = 4
+	active = { 
+		has_landed_title = k_hellenic_pagan
+	}
+	flags = { religious scepter unique jewelry crown_jewel }
+	stacking = no
+	picture = "GFX_scepter_hellenic_fylkir"
+	slot = scepter
+	stacking = no
+	indestructible = yes
+	allowed_gift = {
+		always = no
+	}
+}
+

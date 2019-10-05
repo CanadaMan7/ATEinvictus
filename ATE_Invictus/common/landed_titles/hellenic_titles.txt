@@ -1,0 +1,52 @@
+#The mighty kingdom of ROME... founded in Vicksburg
+
+k_rome = {
+	color={ 143 12 100 }
+	color2={ 255 255 20 }
+	capital = 1127  #Vicksburg
+	creation_requires_capital = yes
+	dynasty_title_names = no
+	
+	
+	allow = {
+		culture = Roman
+	}
+
+	dignity = 100 # Counted as having this many more counties than it does
+
+}
+
+
+k_hellenic_pagan = {
+	color={ 124 0 175 }
+	color2={ 220 220 0 }
+	
+	capital = 1127 # Vicksburg
+	
+	title = "PONTIFEX_MAXIMUS"
+	title_female = "PONTIFEX_MAXIMA"
+	foa = "POPE_FOA"
+	short_name = yes
+
+	# Always exists
+	landless = yes
+
+	creation_requires_capital = no
+
+	allow = {
+		religion = hellenic_pagan_reformed
+		num_of_holy_sites = 3
+		piety = 500
+	}
+	
+	dignity = 100 # Counted as having this many more counties than it does
+	
+	# Controls a religion
+	controls_religion = hellenic_pagan_reformed
+	
+	religion = hellenic_pagan_reformed
+
+	assimilate = no
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}

@@ -1,0 +1,76 @@
+targetted_decisions = {
+
+	#Clense person of bad traits
+	cleanse_person = {
+		only_playable = yes
+		filter = court
+		ai_target_filter = court
+		ai_check_interval = 12
+
+		from_potential = {
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			NOT = { trait = incapable }
+			trait = Invictus
+		}
+
+		potential = {
+			host = { character = FROM }
+			OR = {
+				is_lover = FROM
+				family = FROM
+			}
+		}
+
+		allow = {
+			ROOT = {
+				OR = {
+					trait = inbred
+					trait = hunchback
+					trait = imbecile
+					trait = stutter
+					trait = harelip
+					trait = clubfooted
+					trait = syphilitic
+				}
+			}
+			FROM = { piety = 150 }
+		}
+
+		effect = {
+			ROOT = {
+				if = {
+					limit = {	trait = inbred	}
+					remove_trait = inbred
+				}
+				if = {
+					limit = {	trait = hunchback	}
+					remove_trait = hunchback
+				}
+				if = {
+					limit = {	trait = imbecile	}
+					remove_trait = hunchback
+				}
+				if = {
+					limit = {	trait = stutter	}
+					remove_trait = hunchback
+				}
+				if = {
+					limit = {	trait = harelip	}
+					remove_trait = harelip
+				}
+				if = {
+					limit = {	trait = clubfooted	}
+					remove_trait = harelip
+				}
+				if = {
+					limit = {	trait = syphilitic	}
+					remove_trait = harelip
+				}			
+			}
+			FROM = { piety = -150 }
+		}
+	}
+
+}
