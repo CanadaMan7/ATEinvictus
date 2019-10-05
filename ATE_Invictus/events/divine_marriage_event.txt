@@ -1,0 +1,132 @@
+namespace = divinemarriage
+
+character_event = {
+	id = divinemarriage.1
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		okay_with_incest_trigger = yes		#Child has appropriate faith, so dominant partner must have it
+		true_father_even_if_dead = {
+			ROOT = {
+				mother_even_if_dead = {
+					is_close_relative = PREVPREV		#Close enough to be divine
+					OR = {
+						is_married = PREVPREV		#Always works with divine marriages
+						
+						AND = {		#Concubinage and appropriate setting
+							OR = {
+								is_consort = PREVPREV
+								ROOT = { true_father = { is_consort = PREVPREV } }
+							}
+							has_global_flag = divine_marriage_concubines
+						}
+						
+						has_global_flag = divine_marriage_bastards		#Set to work for just about everybody
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		
+		#75% chance to remove any non-inherited negative genetic traits
+		if = {
+			limit = {
+				trait = inbred
+				NOR = {
+					true_father_even_if_dead = { trait = inbred }
+					mother_even_if_dead = { trait = inbred }
+				}
+				random = 25 # 75% chance
+			}
+			remove_trait = inbred
+			random = {		#Can also replace it with lunacy
+				chance = 33
+				add_trait = lunatic
+			}
+		}
+		
+		if = {
+			limit = {
+				trait = clubfooted
+				NOR = {
+					true_father_even_if_dead = { trait = clubfooted }
+					mother_even_if_dead = { trait = clubfooted }
+				}
+				random = 25 # 75% chance
+			}
+			remove_trait = clubfooted
+		}
+		
+		if = {
+			limit = {
+				trait = harelip
+				NOR = {
+					true_father_even_if_dead = { trait = harelip }
+					mother_even_if_dead = { trait = harelip }
+				}
+				random = 25 # 75% chance
+			}
+			remove_trait = harelip
+		}
+		
+		if = {
+			limit = {
+				trait = hunchback
+				NOR = {
+					true_father_even_if_dead = { trait = hunchback }
+					mother_even_if_dead = { trait = hunchback }
+				}
+				random = 25 # 75% chance
+			}
+			remove_trait = hunchback
+		}
+		
+		if = {
+			limit = {
+				trait = dwarf
+				NOR = {
+					true_father_even_if_dead = { trait = dwarf }
+					mother_even_if_dead = { trait = dwarf }
+				}
+				random = 25 # 75% chance
+			}
+			remove_trait = dwarf
+		}
+	}
+}
+
+character_event = {
+	id = divinemarriage.2
+	
+	is_triggered_only = yes
+	
+	picture = GFX_evt_sultan
+	border = GFX_event_normal_frame_religion
+	desc = EVTDESC_divinemarriage2
+	
+	immediate = { set_global_flag = divine_option_picked }
+	
+	option = {
+		name = divinemarriage_only_married
+	}
+	
+	option = {
+		name = divinemarriage_also_concubines
+		hidden_tooltip = {
+			set_global_flag = divine_marriage_concubines
+		}
+	}
+	
+	option = {
+		name = divinemarriage_also_bastards
+		hidden_tooltip = {
+			set_global_flag = divine_marriage_concubines
+			set_global_flag = divine_marriage_bastards
+		}
+	}
+}

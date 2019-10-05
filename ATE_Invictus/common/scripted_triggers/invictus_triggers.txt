@@ -1,0 +1,7 @@
+invictus_incest_trigger = {
+	OR = {
+		religion = hellenic_pagan
+		religion = hellenic_pagan_reformed
+	}
+	trait = Invictus
+}

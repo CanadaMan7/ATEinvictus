@@ -1,0 +1,6 @@
+# character
+on_birth = {
+	events = {
+		divinemarriage.1 # Inbred chance reduction for divine marriages
+	}
+}
