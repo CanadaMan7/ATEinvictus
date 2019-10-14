@@ -74,3 +74,39 @@ targetted_decisions = {
 	}
 
 }
+
+decisions = {
+	invictus_startup = {
+		only_playable = yes
+		is_high_prio = yes
+		ai = no
+		potential = {
+			is_adult = yes
+			is_inaccessible_trigger = no
+			NOT = { trait = incapable }
+			is_ruler = yes
+			is_landed = yes
+			independent = yes
+			trait = Invictus
+			NOR = {
+				has_global_flag = invictus_startup_used
+				has_global_flag = invictus_startup_declined
+			}
+			NOT = { has_global_flag = invictus_startup_decision_started }
+		}
+
+		allow = {
+			prisoner = no
+			trait = Invictus
+		}
+		effect = {
+			custom_tooltip = {
+				text = tooltip_invictus_startup_decision
+			}
+			hidden_tooltip = {
+				set_global_flag = invictus_startup_decision_started
+				character_event = { id = invictus_events.1 }
+			}
+		}
+	}
+}

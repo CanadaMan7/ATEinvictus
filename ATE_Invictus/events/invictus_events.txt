@@ -19,8 +19,10 @@ character_event = {
 		}
 		hidden_tooltip = { 
 			set_global_flag = invictus_startup_used
+			set_global_flag = divine_marriage_concubines
+			set_global_flag = divine_marriage_bastards
 			capital_scope = {
-				province_event = { id = 55001 days = 1 }
+				province_event = { id = invictus_events.2 days = 0 }
 			}
 		}
 	}
@@ -31,8 +33,34 @@ character_event = {
 			set_global_flag = invictus_startup_declined
 		}
 	}
+}
+
+# Invictus Settlers Event
+province_event = {
+	id = invictus_events.2
+	desc = "EVTDESC55001"
+	picture = GFX_evt_culture_change
+	
+	is_triggered_only = yes
+
 	option = {
-		name = EVTOPTCinvictus_events1
-		custom_tooltip = { text = EVTOPTCinvictus_events1_TT }
+		name = "EVTOPTA55001"
+		owner = {
+			ROOT = {
+				culture = PREV
+				if = {
+					limit = {
+						NOT = { religion = PREV }
+					}
+					religion = PREV
+				}
+				if = {
+					limit = {
+						has_province_modifier = nomad_agitation
+					}
+					remove_province_modifier = nomad_agitation
+				}
+			}
+		}
 	}
 }

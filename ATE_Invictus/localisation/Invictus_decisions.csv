@@ -1,5 +1,11 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x,,,
-cleanse_person;Cleanse weakness;;;;;;;;;;;;;x,,,
-cleanse_person_desc;If I don't do something,this person will not be able to aide me on my bloodline's journey to greatness.;;;;;;;;;;;;;x,,
+cleanse_person;Cleanse Weakness;;;;;;;;;;;;;x,,,
+cleanse_person_desc;This person is sickly and weak. I could always attempt a healing ritual on them, but it would take a sizable display of piety to the gods.;;;;;;;;;;;;;x,,
 hellenic_leader;Aeneator;Aeneator;Aeneator;;Aeneator;;;;;;;;;x,,,
 hellenic_leader_desc;This character is a source of morale for [GetHerHis] troops, bringing them singing into battle.;Ce personnage est une source de moral pour ses troupes, les amenant à chanter au combat.;Dieser Charakter ist eine Quelle der Moral für [GetHerHis]e Truppen und bringt sie singend in den Kampf.;;Este personaje es una fuente de moral para sus tropas, a las que lleva a la batalla cantando.;;;;;;;;;x
+invictus_startup;Appeal To The Gods;;;;;;;;;;;;;x,,,
+invictus_startup_desc;Activate Invictus perks and choose startup options.;;;;;;;;;;;;;x,,,
+invictus_events.1;Activate Divine Favor?;;;;;;;;;;;;;x,,,
+EVTDESCinvictus_events1;Since you’ve elected to choose the Invictus trait, you’ll be given certain benefits beyond the overt modifiers of the trait itself. Namely this deals with negating the effects of inbreeding while a Hellenic faithful and allowing you to convert your capital province to your culture and religion at the start of the game. These options and some starting cash can be accepted by clicking the below Accept button or opted out of by clicking Decline.;;;;;;;;;;;;;x,,,
+EVTOPTAinvictus_events1_TT;Accept, grant me your boon!;;;;;;;;;;;;;x,,,
+EVTOPTBinvictus_events1_TT;Decline, the stat buffs are enough.;;;;;;;;;;;;;x,,,
