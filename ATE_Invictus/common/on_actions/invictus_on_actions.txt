@@ -1,0 +1,6 @@
+# character
+on_startup = {
+	events = {
+		invictus_holysites.0 # Initial sweep to mark counties as possible holy sites
+	}
+}

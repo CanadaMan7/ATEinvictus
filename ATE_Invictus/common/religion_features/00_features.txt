@@ -1483,6 +1483,38 @@ religion_doctrine = {
 			factor = 50
 		}
 	}
+
+	religion_feature_cult_of_mars = {
+		picture = GFX_religion_feature_hellenic
+		potential = {
+			has_game_started = yes
+			religion = cult_of_mars
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		trigger = {
+			religion = cult_of_mars
+			NOR = { 
+				has_selected_religion_feature = religion_peaceful
+				has_selected_religion_feature = religion_cosmopolitan
+			}
+		}
+		effect = {
+			custom_tooltip = { text = tooltip_religion_feature_patriarchal }
+			custom_tooltip = { text = tooltip_religion_feature_war_levies }
+			custom_tooltip = { text = tooltip_religion_feature_haruspicy }
+			custom_tooltip = { text = tooltip_religion_feature_aztec_sacrifices }
+			custom_tooltip = { text = tooltip_religion_feature_bloodthirsty_mechanics }
+			hidden_tooltip = { 
+				set_heir_designation = yes
+				set_raised_vassal_opinion_loss = no
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
 			
 	religion_feature_pyramids = {
 		picture = GFX_religion_feature_pyramids

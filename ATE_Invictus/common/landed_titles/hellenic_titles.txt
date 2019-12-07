@@ -4,7 +4,7 @@ k_rome = {
 	color={ 143 12 100 }
 	color2={ 255 255 20 }
 	capital = 1127  #Vicksburg
-	creation_requires_capital = yes
+	creation_requires_capital = no
 	dynasty_title_names = no
 	
 	
@@ -13,6 +13,41 @@ k_rome = {
 	}
 
 	dignity = 100 # Counted as having this many more counties than it does
+
+}
+
+e_roman_empire = {
+	color={ 143 12 100 }
+	color2={ 255 255 20 }
+	capital = 1127  #Vicksburg
+	creation_requires_capital = no
+	dynasty_title_names = no
+	
+	
+	allow = {
+		culture = Roman
+	}
+
+	dignity = 200 # Counted as having this many more counties than it does
+
+}
+
+e_roman_empire_outside = {
+	color={ 143 12 100 }
+	color2={ 255 255 20 }
+	capital = 1127  #Vicksburg
+	creation_requires_capital = no
+	dynasty_title_names = no
+
+	# Always exists
+	landless = yes
+	
+	
+	allow = {
+		always = no
+	}
+
+	dignity = 200 # Counted as having this many more counties than it does
 
 }
 
@@ -28,8 +63,6 @@ k_hellenic_pagan = {
 	foa = "POPE_FOA"
 	short_name = yes
 
-	# Always exists
-	landless = yes
 
 	creation_requires_capital = no
 
@@ -37,6 +70,7 @@ k_hellenic_pagan = {
 		religion = hellenic_pagan_reformed
 		num_of_holy_sites = 3
 		piety = 500
+		wealth = 250
 	}
 	
 	dignity = 100 # Counted as having this many more counties than it does

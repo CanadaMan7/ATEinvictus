@@ -43,7 +43,7 @@ province_event = {
 	
 	is_triggered_only = yes
 
-	option = {
+	option = {	#Accept
 		name = "EVTOPTA55001"
 		owner = {
 			ROOT = {
@@ -62,5 +62,18 @@ province_event = {
 				}
 			}
 		}
+	}
+}
+
+# Lustratio Event
+province_event = {
+	id = invictus_events.3
+	desc = EVTDESCinvictus_events3
+	picture = GFX_evt_culture_change
+	
+	is_triggered_only = yes
+
+	option = {	#Thank you so much
+		name = EVTOPTAinvictus_events3
 	}
 }

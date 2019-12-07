@@ -1257,7 +1257,7 @@ byzantine_elective = {
 			}
 			diplomacy = 8
 			NOT = { diplomacy = 10 }
-			culture = roman
+			culture = Roman
 		}
 		additive_modifier = { #Romans love their orations...
 			value = 15
